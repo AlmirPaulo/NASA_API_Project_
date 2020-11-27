@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+* {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html { 
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	background: url('bg.jpg');
+	color: #ffff00;	
+	font-family: 'Audiowide';
+}
+
+a {
+	color: #00cc00;
+}
+
+button {
+	background: transparent;
+	border-style: none;
+	font-family:'Audiowide';
+	color: #ffff00;
+	font-size: 2rem;
+}
+
+#options {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+input {
+	background: transparent;
+	border-style: none none solid none;
+	border-color:#ffff00; 
+	color:#ffff00;
+        font-family:'Audiowide';
+	width: 5%;
+}
+
+label,select,input {
+	margin: 2vh 0 2vh 0;
+}
+
+select, input{
+	border-radius: 7px;
+}
+
+span {
+	margin: 3vh 2vw 0 2vw;
+}
+
+button {
+	border-radius: 5px;
+	padding: 10px 20px;
+	margin-top: 2vh;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	margin-top: 35vh;
+}
+
+@media (max-width:820px) {
+
+body {
+	font-size: 1.4rem;
+}
+
+footer{
+	margin-top:60vh;
+}
+
+#options label,select,input {
+	margin: 1vh 0 1vh 0;
+}
+}

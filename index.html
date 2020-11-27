@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.jsdelivr.net/npm/brython@3.8.10/brython.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/brython@3.8.10/brython_stdlib.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="alien.png">
+	<title>Mars Explorer</title>
+</head>
+<body onload = 'brython()'>
+	<script type = 'text/python' src = 'app.py'></script>
+	<header>
+		<img src="alien.png" alt="logo" class = 'logo'> 
+		<h4 class = 'title'>Mars Explorer</h4>
+	</header>
+	<div id="options">
+		<h1>Welcome Explorer!</h1> 
+		<label for="rover">Which rover do you want to connect?</label>
+		<select id="rover" name="rover">		
+			<option value="curiosity">Curiosity</option>
+			<option value="opportunity">Opportunity</option>
+			<option value="spirit">Spirit</option>
+		</select>
+		
+		<label for="date">Set the <a href="https://en.wikipedia.org/wiki/Sol_(day_on_Mars)" target="_blank">sol</a> day you want to verify:</label>
+			<input id= "date" type="text">
+		<label for="camera">Which camera do you want to verify?</label>
+		<select id="camera" name="">
+			<option value="FHAZ">Front Hazard Avoidance Camera</option>
+			<option value="RHAZ">Rear Hazard Avoidance Camera</option>
+			<option value="MAST">Mast Camera</option>
+			<option value="CHEMCAM">Chemistry and Camera Complex</option>
+			<option value="MAHLI">Mars Hand Lens Imager</option>
+			<option value="MARDI">Mars Descent Imager</option>
+			<option value="NAVCAM">Navigation Camera</option>
+			<option value="PANCAM">Panoramic Camera</option>
+			<option value="MINITES">Miniature Thermal Emission Spectrometer (Mini-TES)</option>	
+		</select>
+		<button id="btn">Submit</button>
+	</div>
+	<style>
+
+#output{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:center;
+}
+
+.pic {
+	width: 40vw;
+	height:auto;
+	border: 3px solid #ffff00;
+	margin-left: 5vw; 
+	margin-top: 5vh;
+}
+
+	</style>
+	<div id="output">
+<!--	<img src="http://mars.jpl.nasa.gov/msl-raw-images/ods/surface/sol/00100/soas/rdr/ccam/CR0_406369674PRC_F0050104CCAM01100L1.PNG" class='pic' alt=""-->
+	</div>
+	</body>
+	<footer>
+		<div class="footer">
+			Webpage by <a href="#">Almir Paulo</a>. Images by <a href="https://api.nasa.gov/" target= '_blank'>NASA</a>.
+		</div>
+	</footer>
